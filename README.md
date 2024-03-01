@@ -10,6 +10,7 @@ Collection of reusable workflows and compostite actions
 ## Composite Actions
 
 - [greeting](./.github/actions/greeting/action.yml)
+- [msbuild](./.github/actions/msbuild/action.yml)
 
 Usage:
 
@@ -18,3 +19,4 @@ Usage:
 More info:
 
 - [Reusing Workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+- [Creating a composite action](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action)
