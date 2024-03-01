@@ -15,4 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting
-        run: echo "Hello, ${{ inputs.message }}!"
+        run: echo "Hello, $MESSAGE"
+        env:
+          MESSAGE: ${{ inputs.message }}
