@@ -7,3 +7,4 @@ Files here are symlinks to the files in [.github/workflows](./.github/workflows)
 
 - [greeting](greeting.yml)
 - [msbuild](msbuild.yml)
+- [npm_build](npm_build.yml)

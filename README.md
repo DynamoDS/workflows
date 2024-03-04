@@ -8,6 +8,7 @@ Collection of reusable workflows and compostite actions
 | -- |  -- | -- | -- |
 | [greeting.yml](https://github.com/DynamoDS/workflows/blob/master/workflows/greeting.yml) | sample workflow | [greeting_workflow.yml](.github/workflows/greeting_workflow.yml) | [![Greeting (Workflow)](https://github.com/DynamoDS/workflows/actions/workflows/greeting_workflow.yml/badge.svg)](https://github.com/DynamoDS/workflows/actions/workflows/greeting_workflow.yml) |
 | [msbuild.yml](https://github.com/DynamoDS/workflows/blob/master/workflows/msbuild.yml) | Build a project with msbuild | [msbuild_workflow.yml](.github/workflows/msbuild_workflow.yml) | [![MSBuild (Workflow)](https://github.com/DynamoDS/workflows/actions/workflows/msbuild_workflow.yml/badge.svg)](https://github.com/DynamoDS/workflows/actions/workflows/msbuild_workflow.yml) |
+| [npm_build.yml](https://github.com/DynamoDS/workflows/blob/master/workflows/npm_build.yml) | Build a project with npm | [npm_build_workflow.yml](.github/workflows/npm_build_workflow.yml) | [![npm_build (Workflow)](https://github.com/DynamoDS/workflows/actions/workflows/npm_build_workflow.yml/badge.svg)](https://github.com/DynamoDS/workflows/actions/workflows/npm_build_workflow.yml) |
 
 ## Composite Actions
 
