@@ -1,5 +1,5 @@
-name: Greeting
-description: Greeting
+name: MSBuild
+description: Build .NET solution with MSBuild
 inputs:
   repository:
     description: Repository

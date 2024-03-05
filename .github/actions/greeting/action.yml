@@ -14,11 +14,11 @@ runs:
   using: composite
   steps:
     - name: Greeting
-      run: echo "Hello $MESSAGE"
       shell: bash
+      run: echo "Hello $MESSAGE"
       env:
         MESSAGE: ${{ inputs.message }}
     - name: Random Number
       id: random_number
-      run: echo "number=$(echo $RANDOM)" >> $GITHUB_OUTPUT
       shell: bash
+      run: echo "number=$(echo $RANDOM)" >> $GITHUB_OUTPUT

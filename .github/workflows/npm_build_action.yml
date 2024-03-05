@@ -1,0 +1,23 @@
+name: NPM Build (Action)
+
+on:
+  push:
+    paths:
+      - .github/actions/npm_build/action.yml
+      - .github/workflows/npm_build_action.yml
+  workflow_dispatch:
+
+jobs:
+  npm_build:
+    name: NPM Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: NPM Build
+        uses: DynamoDS/workflows/.github/actions/npm_build@master
+        with:
+          repository: DynamoDS/SplashScreen
+          node_version: 20
+      - name: Unit Test
+        run: npm run test:unit
+      - name: E2E Test
+        run: npm run test:e2e

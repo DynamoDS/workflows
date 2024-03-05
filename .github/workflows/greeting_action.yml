@@ -3,7 +3,7 @@ name: Greeting (Action)
 on:
   push:
     paths:
-      - actions/greeting/action.yml
+      - .github/actions/greeting/action.yml
       - .github/workflows/greeting_action.yml
   workflow_dispatch:
 
@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Greeting
         id: greeting
-        uses: DynamoDS/workflows/actions/greeting@master
+        uses: DynamoDS/workflows/.github/actions/greeting@master
         with:
           message: World
       - name: Random number
