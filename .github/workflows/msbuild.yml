@@ -36,17 +36,17 @@ jobs:
     runs-on: ${{ inputs.runner }}
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@b4ffde6 # v4.1.1
         with:
           repository: ${{ inputs.repository }}
       - name: Setup dotnet
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@4d6c8fc #v4.0.0
         with:
           dotnet-version: ${{ inputs.dotnet_version }}
       - name: Disable problem matcher
         run: Write-Output "::remove-matcher owner=csc::"
       - name: Setup msbuild
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@6fb0222 # v2
       - name: Restore dependencies
         run: |
           dotnet restore ${{ github.workspace }}\${{ inputs.solution_path }} /p:Configuration=${{ inputs.build_configuration }} --runtime=${{ inputs.runtime_identifier }}
